@@ -1,4 +1,5 @@
 // api/analyze.ts
+export const config = { runtime: 'nodejs20.x' }
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const MODEL = process.env.MODEL_ID || "gpt-4o-mini"; // choose an available model in GitHub Models
@@ -62,5 +63,6 @@ Return plain text THEN a JSON block.
   }
 }
 
-export const config = { runtime: 'nodejs20.x' }
+
+
 
