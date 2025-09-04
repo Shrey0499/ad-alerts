@@ -1,4 +1,6 @@
 // api/notify.ts
+
+export const config = { runtime: 'nodejs20.x' }
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL!;
@@ -28,5 +30,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 }
 
-export const config = { runtime: 'nodejs20.x' }
+
+
 
