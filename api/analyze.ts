@@ -61,3 +61,6 @@ Return plain text THEN a JSON block.
     return res.status(500).json({ error: err?.message || "Server error" });
   }
 }
+
+export const config = { runtime: 'nodejs20.x' }
+
